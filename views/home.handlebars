@@ -1,0 +1,12 @@
+<h1>Home - Usuarios</h1>
+
+{{#each users}}
+
+    <p>{{nome}}</p>
+    <p>{{email}}</p>
+    <a href="/delete/{{id}}">
+        <button>Delete</button>
+    </a>
+    <hr>
+
+{{/each}}

@@ -1,7 +1,10 @@
 const Sequelize = require('sequelize')
 const sequelize = new Sequelize('gee_movies', 'root', 'L@moon$54S', {
     host: "localhost",
-    dialect: 'mysql'
+    dialect: 'mysql',
+    query: {
+        raw:true
+    } // Config nova pra aparecer os dados no front
 }) // Conexão com o banco de dados
 
 // Verifica a conexao com o banco de dados
